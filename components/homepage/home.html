@@ -1,0 +1,55 @@
+
+<!--Desktop Toolbar Menu-->
+<md-toolbar hide-xs md-scroll-shrink id="toolbar">
+  <div class="md-toolbar-tools"> 
+  <md-button>
+        <md-icon class="mdi mdi-menu" id="menu" ng-click="vm.openSidebar()">
+       
+        </md-icon>    
+    </md-button>
+    <br>
+  <!--   <p><strong>Cmrenovationsllc</strong></p>
+    
+    <md-button ng-click="vm.goHome()">
+      <md-icon class="mdi mdi-home"></md-icon>
+      Home
+    </md-button>
+
+    <md-button>
+      <md-icon class="mdi mdi-store"></md-icon>
+      Services
+    </md-button>
+      
+    <md-button>
+        <md-icon class="mdi mdi-message-processing" ng-click="vm.openSidebar()">
+        Contact Us
+        </md-icon>    
+    </md-button> -->
+
+  </div>
+</md-toolbar>
+
+<ui-view></ui-view>
+
+    
+<!--Mobile Menu-->    
+<md-fab-toolbar md-open="menu.isOpen" count="menu.count" md-direction="{{menu.selectedDirection}}">
+    <md-fab-trigger hide show-xs class="align-with-text">
+        <md-button aria-label="menu" class="md-fab md-primary">
+            <md-icon md-svg-src="images/icons/menu.svg"></md-icon>
+        </md-button>
+    </md-fab-trigger>
+    
+     <md-toolbar>
+      <md-fab-actions class="md-toolbar-tools">
+        <md-button aria-label="home"> Home
+        </md-button>
+        <md-button aria-label="services">Services 
+        </md-button>
+        <md-button ng-click="vm.openSidebar()" aria-label="contact">Contact Us
+        </md-button>
+      </md-fab-actions>
+    </md-toolbar>
+</md-fab-toolbar>
+    
+ 

@@ -1,0 +1,27 @@
+md-input-container .md-input {
+    width: auto;
+}
+
+.mdi {
+    height: auto;
+    width: auto;
+    
+}
+
+md-icon {
+    height: auto;
+    width: auto;
+}
+
+/*
+md-toolbar {
+    height: 200px;
+}*/
+
+md-sidenav {
+	width: 400px;
+}
+
+md-toolbar {
+	height: 150px;
+}
