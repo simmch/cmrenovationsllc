@@ -20,8 +20,43 @@ md-toolbar {
 
 md-sidenav {
 	width: 400px;
+	height: 250px;
+	background-color: #000000;
 }
 
 md-toolbar {
 	height: 150px;
+}
+
+.sidenavbutton {
+	color: white;
+}
+
+.location {
+	font-size: 4em;
+	padding: 10px;
+}
+
+.location_card {
+	max-width: 1024px;
+	max-height: 800px;
+	width: 810px;
+	height: 200px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    .location {
+    	font-size: 10px;
+    }
+
+    md-toolbar {
+	height: 80px;
+	}
+
+	.Desk_Menu {
+		display: none;
+	}
 }

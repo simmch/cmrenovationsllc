@@ -16,10 +16,10 @@
                     templateUrl: 'components/homepage/home.html',
                     controller: 'MainController as vm'
                 })
-                .state('home.contact', {
-                    url: '/contact',
-                    templateUrl: 'components/contact/contact.html',
-                    controller: 'ContactController as vm'
+                .state('home.nav', {
+                    url: '/nav',
+                    templateUrl: 'components/navigation/navigation.html',
+                    controller: 'NavController as vm'
                 });
                 
             });

@@ -21,7 +21,7 @@
         
         function openSidebar(){
             console.log('Hey');
-            $state.go('home.contact');
+            $state.go('home.nav');
         }      
 
          function goHome(){
