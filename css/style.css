@@ -1,62 +1,69 @@
 md-input-container .md-input {
     width: auto;
 }
-
 .mdi {
     height: auto;
     width: auto;
     
 }
-
 md-icon {
     height: auto;
     width: auto;
 }
-
 /*
 md-toolbar {
     height: 200px;
 }*/
-
 md-sidenav {
 	width: 400px;
 	height: 250px;
 	background-color: #000000;
 }
-
 md-toolbar {
 	height: 150px;
 }
-
 .sidenavbutton {
 	color: white;
 }
-
 .location {
 	font-size: 4em;
 	padding: 10px;
 }
-
 .location_card {
-	max-width: 1024px;
-	max-height: 800px;
 	width: 810px;
-	height: 200px;
+	height: 300px;
+}
+.location_font {
+	text-align: center;
+}
+.contact_home {
+	margin: auto;
+	top: 30px;
 }
 
 
-
+/* Mobile CSS */
 @media only screen and (max-width: 600px) {
     /* For mobile phones: */
     .location {
     	font-size: 10px;
     }
-
     md-toolbar {
 	height: 80px;
 	}
 
 	.Desk_Menu {
 		display: none;
+	}
+	.location_font {
+		font-size: 14px;
+	}
+	#adv {
+		margin-top: 0px;
+		padding: 5px;
+	}
+	.contact_home {
+	margin: auto;
+	top: 0px;
 	}
 }

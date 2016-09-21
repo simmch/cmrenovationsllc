@@ -1,11 +1,11 @@
 (function(){
-    
+
     "use strict";
-    
-    angular 
-        .module('myApp')
+
+    angular
+        .module('nav.ctrl', ['ngMaterial', 'ui.router'])
         .controller('NavController', function($scope, $state, $mdSidenav, $timeout){
-        
+
         var vm = this;
 
         vm.goHome = goHome;
@@ -16,7 +16,7 @@
             console.log('goHome');
             $state.go('home');
         }
-        
+
         $timeout(function(){
             $mdSidenav('left').open();
         });
@@ -35,8 +35,8 @@
         	$scope.sidenavOpen = false;
         }
 
-        
-        
+
+
     });
-    
+
 })();

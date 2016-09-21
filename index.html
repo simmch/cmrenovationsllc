@@ -9,6 +9,44 @@
 </head>
 <body ng-app="myApp" ng-controller="MainController">
    
+<!--Desktop Toolbar Menu-->
+<md-toolbar  md-scroll-shrink id="toolbar">
+  <div class="md-toolbar-tools" layout="row" flex> 
+  <!--Mobile Menu Button-->
+  <md-button hide show-xs ng-click="vm.openSidebar()" ui-sref="nav">
+        <md-icon class="mdi mdi-menu" id="menu" >
+        </md-icon>    
+        Menu
+    </md-button>
+
+   <!--Desktop Buttons-->
+   <md-button show hide-xs ui-sref="home" class="Desk_Menu">
+    <md-icon class="mdi mdi-home"></md-icon>
+   Home
+   </md-button> 
+
+   <md-button show hide-xs ui-sref="about" class="Desk_Menu">
+   <md-icon class="mdi mdi-account"></md-icon>
+   About
+   </md-button> 
+
+   <md-button show hide-xs ng-click="" class="Desk_Menu">
+   <md-icon class="mdi mdi-apps"></md-icon>
+   Services
+   </md-button> 
+
+   <md-button show hide-xs ng-click="" class="Desk_Menu">
+   <md-icon class="mdi mdi-border-inside"></md-icon>
+   Products
+   </md-button> 
+
+   <md-button show hide-xs ng-click="" class="Desk_Menu">
+   <md-icon class="mdi mdi-message"></md-icon>
+   Contact 
+   </md-button>          
+  </div>
+</md-toolbar>
+
 <ui-view></ui-view>
     
 <script src="node_modules/angular/angular.js"></script>
@@ -16,6 +54,10 @@
 <script src="node_modules/angular-aria/angular-aria.js"></script>
 <script src="node_modules/angular-material/angular-material.js"></script>
 <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="components/about/about.js"></script>
+<script src="components/contact/contact.js"></script>
+<script src="components/products/products.js"></script>
+<script src="components/services/services.js"></script>
 <script src="scripts/app.js"></script>
 <script src="components/cmreno.ctr.js"></script>
 <script src="components/navigation/navigation.js"></script>

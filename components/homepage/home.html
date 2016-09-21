@@ -1,70 +1,25 @@
-
-<!--Desktop Toolbar Menu-->
-<md-toolbar  md-scroll-shrink id="toolbar" >
-  <div class="md-toolbar-tools" layout="row" flex> 
-  <!--Mobile Menu Button-->
-  <md-button hide show-xs ng-click="vm.openSidebar()">
-        <md-icon class="mdi mdi-menu" id="menu" ng-click="vm.openSidebar()">
-        </md-icon>    
-        Menu
-    </md-button>
-
-   <!--Desktop Buttons-->
-   <md-button show hide-xs ng-click="" class="Desk_Menu">
-    <md-icon class="mdi mdi-home"></md-icon>
-   Home
-   </md-button> 
-
-   <md-button show hide-xs ng-click="" class="Desk_Menu">
-   <md-icon class="mdi mdi-account"></md-icon>
-   About
-   </md-button> 
-
-   <md-button show hide-xs ng-click="" class="Desk_Menu">
-   <md-icon class="mdi mdi-apps"></md-icon>
-   Services
-   </md-button> 
-
-   <md-button show hide-xs ng-click="" class="Desk_Menu">
-   <md-icon class="mdi mdi-border-inside"></md-icon>
-   Products
-   </md-button> 
-
-   <md-button show hide-xs ng-click="" class="Desk_Menu">
-   <md-icon class="mdi mdi-message"></md-icon>
-   Contact 
-   </md-button>       
- 
-   
-  </div>
-<!--  <md-content layout-align="center center">
-  <img ng-src="images/Logo.png" class="logo" alt="advertise">
-  </md-content> -->
-
-</md-toolbar>
-
-<ui-view></ui-view>
-
-<!--Mobile Menu-->    
-<!-- <md-fab-toolbar md-direction="left">
-    <md-fab-trigger hide show-xs class="align-with-text" ng-click="vm.openSidebar()">
-        <md-button aria-label="menu" class="md-fab md-primary">
-            <md-icon md-svg-src="images/icons/menu.svg"></md-icon>
-        </md-button>
-    </md-fab-trigger>
-</md-fab-toolbar> -->
 <div>
-<a ng-href="/" layout-align="center center" layout="row" layout-padding>
-    <img ng-src="images/advertise.jpeg" class="md-class-image" alt="advertise"> 
+    <a ng-href="/" layout-align="center center" id="adv" layout="row" layout-padding>
+      <img ng-src="images/advertise.jpeg" id="adv" class="md-class-image" alt="advertise"> 
     </a>
 </div>
+
 <md-content layout="row" layout-align="center center" layout-padding>
 
   <md-card class="location_card" layout-align="center center" layout="row" layout-padding>
   <div class="card-content">
-      <h3 class="Location">Located at the Duke Energy Convention Center </h3>
+      
+      <h3 class="Location location_font" layout-align="center center" layout="row">Located at the Duke Energy Convention Center 
+      </h3>
+      
+      <p class="location_font md-card-content" layout-align="center center" layout="row"><span class="location_font">525 Elm Street<span><br/> Cincinnati, Oh 45202</p>
 
+      <p class="location_font md-card-content" layout-align="center center" layout="row"><span class="location_font">Friday : 9/30 12-7 <br> Saturday: 10/1 10-7 <br> Sunday: 10/2 11-5</p>
+      
+      <p class="location_font md-card-content">Stop by Booth 142 for your chance to win a <strong>Free Installation</strong> for a patio cover or sunroom!</p>
+      <br />
+      <md-button class="md-raised md-primary contact_home" layout-align="center center" layout="row" flex>Contact Us</md-button>
   </div>
-  </md-card> 
-</md-content>    
- 
+  </md-card>
+
+</md-content>
