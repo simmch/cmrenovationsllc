@@ -10,7 +10,7 @@
 <body ng-app="myApp" ng-controller="MainController">
    
 <!--Desktop Toolbar Menu-->
-<md-toolbar  md-scroll-shrink id="toolbar">
+<md-toolbar  md-scroll-shrink id="toolbar" ng-cloak>
   <div class="md-toolbar-tools" layout="row" flex> 
   <!--Mobile Menu Button-->
   <md-button hide show-xs ng-click="vm.openSidebar()" ui-sref="nav">
@@ -22,32 +22,40 @@
    <!--Desktop Buttons-->
    <md-button show hide-xs ui-sref="home" class="Desk_Menu">
     <md-icon class="mdi mdi-home"></md-icon>
-   Home
+  	<strong>CMRENOVATIONSLLC</strong>
    </md-button> 
-
+   <span flex=""></span>
    <md-button show hide-xs ui-sref="about" class="Desk_Menu">
-   <md-icon class="mdi mdi-account"></md-icon>
+   <!-- <md-icon class="mdi mdi-account"></md-icon> -->
    About
    </md-button> 
 
-   <md-button show hide-xs ng-click="" class="Desk_Menu">
-   <md-icon class="mdi mdi-apps"></md-icon>
+   <md-button show hide-xs ui-sref="services" class="Desk_Menu">
+   <!-- <md-icon class="mdi mdi-apps"></md-icon> -->
    Services
    </md-button> 
 
-   <md-button show hide-xs ng-click="" class="Desk_Menu">
-   <md-icon class="mdi mdi-border-inside"></md-icon>
+   <md-button show hide-xs ui-sref="product" class="Desk_Menu">
+   <!-- <md-icon class="mdi mdi-border-inside"></md-icon> -->
    Products
    </md-button> 
 
    <md-button show hide-xs ng-click="" class="Desk_Menu">
-   <md-icon class="mdi mdi-message"></md-icon>
+   <!-- <md-icon class="mdi mdi-message"></md-icon> -->
    Contact 
    </md-button>          
   </div>
 </md-toolbar>
 
 <ui-view></ui-view>
+
+<!-- <footer ng-cloak>
+      <md-toolbar class="md-scroll-shrink" style="height: 50px; margin-top: 25px;">
+        <div layout="row" layout-align="center center" flex>
+          <p>copywrite</p>
+        </div>
+      </md-toolbar>
+</footer> -->
     
 <script src="node_modules/angular/angular.js"></script>
 <script src="node_modules/angular-animate/angular-animate.js"></script>
@@ -61,5 +69,7 @@
 <script src="scripts/app.js"></script>
 <script src="components/cmreno.ctr.js"></script>
 <script src="components/navigation/navigation.js"></script>
+<script src="components/cmreno.fac.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.16.1/lodash.min.js"></script>
 </body>
 </html>

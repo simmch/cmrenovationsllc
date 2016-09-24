@@ -1,0 +1,36 @@
+<div class="filters" layout="row" layout-align="center center">
+
+<!--Hide filterText on Mobile-->
+<md-input-container id="filterText">
+	<label>Enter a Search Term</label>
+	<input ng-model="productsFilter" type="text">
+</md-input-container>
+
+<md-input-container>
+	<label>Category</label>
+	<md-select ng-model="category">
+		<md-option ng-repeat="category in vm.categories" value="{{ category }}"> {{ category }}</md-option>
+</md-input-container>
+
+<div layout="row">
+<md-button ng-click="productsFilter = '';category='';" class="md-warn">
+Clear
+</md-button>
+</div>
+</div>
+
+<md-content class="md-padding" layout="row" layout-wrap layout-align="center center">
+
+<md-card ng-repeat="product in vm.products | filter: productsFilter | filter: category" flex="30"  class="product" layout-wrap>
+
+<img ng-src="{{ product.image }}" class="md-avatar">
+<md-card-content>
+<div class="product-info">
+	<h2 class="md-title">{{ product.title }}</h2>
+</div>
+</md-card-content>
+
+
+</md-card>
+
+</md-content>

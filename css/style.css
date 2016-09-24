@@ -10,20 +10,65 @@ md-icon {
     height: auto;
     width: auto;
 }
+
+.about_list {
+	text-align: center;
+	font-size: 16px;
+	color: red;
+	line-height: 25px;
+	list-style: none;
+
+}
+
+.center {
+	text-align: center;
+	display: inline-block;
+}
+
+.about_text {
+	font-size: 18px;
+}
+
+.product.ng-enter, .product.ng-move {
+  transition: 0.4s all;
+  opacity: 0;
+}
+
+.product.ng-enter.ng-enter-active, .product.ng-move.ng-move-active {
+  opacity: 1;
+}
+
+.product.ng-leave {
+  animation: 0.4s fade_cmrenovation;
+}
+
+md-input-container .md-input {
+  width: auto;
+}
+
+@keyframes fade_cmrenovation {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+
 /*
 md-toolbar {
     height: 200px;
 }*/
-md-sidenav {
-	width: 400px;
-	height: 250px;
-	background-color: #000000;
-}
+
 md-toolbar {
 	height: 150px;
 }
 .sidenavbutton {
+	font-size: 1.5em;
+	line-height: 50px;
+	display: inline-block;
 	color: white;
+	margin-left: 25px;
+}
+md-sidenav {
+	background-color: rgb(0,150,136);
 }
 .location {
 	font-size: 4em;
@@ -35,11 +80,14 @@ md-toolbar {
 }
 .location_font {
 	text-align: center;
+	font-size: 18px;
 }
 .contact_home {
 	margin: auto;
-	top: 30px;
+	top: 20px;
 }
+
+
 
 
 /* Mobile CSS */
@@ -64,6 +112,24 @@ md-toolbar {
 	}
 	.contact_home {
 	margin: auto;
-	top: 0px;
+	top: -20px;
+	}
+	.about_text {
+		font-size: 14px;
+		text-align: center;
+	}
+	.about_list {
+		text-align: center;
+	}
+	.layout-row > .flex-30 {
+		max-width: 100%;
+		max-height: 100%;
+		flex:  1 1 50%;
+	}
+	.md-title {
+		display: none;
+	}
+	#filterText {
+		display: none;
 	}
 }

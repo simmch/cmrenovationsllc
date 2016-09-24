@@ -3,7 +3,7 @@
     "use strict";
 
     angular
-        .module('nav.ctrl', ['ngMaterial', 'ui.router'])
+        .module('nav.ctrl', ['ngMaterial', 'ui.router', 'main.ctrl'])
         .controller('NavController', function($scope, $state, $mdSidenav, $timeout){
 
         var vm = this;
