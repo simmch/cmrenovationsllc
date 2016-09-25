@@ -3,12 +3,12 @@
 <!--Hide filterText on Mobile-->
 <md-input-container id="filterText">
 	<label>Enter a Search Term</label>
-	<input ng-model="productsFilter" type="text">
+	<input ng-model="productsFilter" type="text" style="color: white;">
 </md-input-container>
 
 <md-input-container>
 	<label>Category</label>
-	<md-select ng-model="category">
+	<md-select ng-model="category" style="color: white;">
 		<md-option ng-repeat="category in vm.categories" value="{{ category }}"> {{ category }}</md-option>
 </md-input-container>
 

@@ -2,10 +2,10 @@
 
 	"use strict";
             angular
-				.module('myApp', ['ngMaterial', 'ui.router', 'main.ctrl', 'about.ctrl', 'nav.ctrl', 'services.ctrl', 'product.ctrl'])
+				.module('myApp', ['ngMaterial', 'ui.router', 'main.ctrl', 'about.ctrl', 'nav.ctrl', 'services.ctrl', 'product.ctrl', 'contact.ctrl'])
 				.config(function($mdThemingProvider, $mdIconProvider, $stateProvider, $urlRouterProvider) {
 					$mdThemingProvider.theme('default')
-					.primaryPalette('teal')
+					.primaryPalette('cyan')
 					.accentPalette('orange');
 
                 $urlRouterProvider.otherwise('/home');
@@ -35,6 +35,11 @@
                     url: '/product',
                     templateUrl: 'components/products/products.html',
                     controller: 'productController as vm'
+                })
+                .state('contact', {
+                    url: '/contact',
+                    templateUrl: 'components/contact/contact.html',
+                    controller: 'contactController as vm'
                 });
 
             });

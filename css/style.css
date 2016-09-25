@@ -1,3 +1,7 @@
+html, body {
+	background-color: black;
+}
+
 md-input-container .md-input {
     width: auto;
 }
@@ -20,6 +24,39 @@ md-icon {
 
 }
 
+.md-button.md-primary.md-raised {
+	width: 100px;
+}
+
+
+/*Color the filter options on the product page*/
+md-input-container.md-default-theme label, md-input-container label, md-input-container.md-default-theme .md-placeholder, md-input-container .md-placeholder {
+	color: white;
+}
+
+md-input-container.md-default-theme .md-input, md-input-container .md-input {
+	border-color: #00BCD4;
+}
+
+md-select.md-default-theme .md-select-value, md-select .md-select-value {
+	border-color: #00BCD4;
+}
+
+md-select.md-default-theme .md-select-value.md-select-placeholder, md-select .md-select-value.md-select-placeholder {
+	color: white;
+}
+/**/
+
+
+
+img {
+	border: 2px solid white;
+}
+
+md-content {
+	background-color: black;
+}
+
 .center {
 	text-align: center;
 	display: inline-block;
@@ -27,6 +64,19 @@ md-icon {
 
 .about_text {
 	font-size: 18px;
+}
+
+.cicon {
+	color: #00BCD4;
+	margin-left: 15px;
+}
+
+.socButton {
+	background-color: #00BCD4;
+}
+
+.product {
+	background-color: transparent;
 }
 
 .product.ng-enter, .product.ng-move {
@@ -51,7 +101,6 @@ md-input-container .md-input {
   to { opacity: 0; }
 }
 
-
 /*
 md-toolbar {
     height: 200px;
@@ -61,14 +110,14 @@ md-toolbar {
 	height: 150px;
 }
 .sidenavbutton {
-	font-size: 1.5em;
+	font-size: 16px;
 	line-height: 50px;
 	display: inline-block;
 	color: white;
 	margin-left: 25px;
 }
 md-sidenav {
-	background-color: rgb(0,150,136);
+	background-color: rgb(0,188,212);
 }
 .location {
 	font-size: 4em;
@@ -87,6 +136,25 @@ md-sidenav {
 	top: 20px;
 }
 
+.ng-binding {
+	color: white;
+}
+
+md-select-menu.md-default-theme md-content md-option:not([disabled]):focus, md-select-menu md-content md-option:not([disabled]):focus, md-select-menu.md-default-theme md-content md-option:not([disabled]):hover, md-select-menu md-content md-option:not([disabled]):hover{
+	background-color: #00BCD4;
+}
+
+md-select-menu md-content md-option[selected]{
+	    color: rgb(0,188,212);
+}
+
+md-select-menu.md-default-theme md-content, md-select-menu md-content {
+	background-color: black;
+}
+
+md-select-menu md-content md-option:not([disabled]):hover {
+	background-color: #00BCD4;
+}
 
 
 
@@ -112,7 +180,7 @@ md-sidenav {
 	}
 	.contact_home {
 	margin: auto;
-	top: -20px;
+	top: 20px;
 	}
 	.about_text {
 		font-size: 14px;
@@ -131,5 +199,8 @@ md-sidenav {
 	}
 	#filterText {
 		display: none;
+	}
+	.location_card {
+		height: 380px;
 	}
 }
