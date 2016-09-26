@@ -68,7 +68,7 @@ md-content {
 
 .cicon {
 	color: #00BCD4;
-	margin-left: 15px;
+	font-size: 1.3em;
 }
 
 .socButton {
@@ -165,7 +165,7 @@ md-select-menu md-content md-option:not([disabled]):hover {
     	font-size: 10px;
     }
     md-toolbar {
-	height: 80px;
+	height: 50px;
 	}
 
 	.Desk_Menu {
@@ -180,7 +180,7 @@ md-select-menu md-content md-option:not([disabled]):hover {
 	}
 	.contact_home {
 	margin: auto;
-	top: 20px;
+	top: 10px;
 	}
 	.about_text {
 		font-size: 14px;
@@ -201,6 +201,6 @@ md-select-menu md-content md-option:not([disabled]):hover {
 		display: none;
 	}
 	.location_card {
-		height: 380px;
+		height: 300px;
 	}
 }

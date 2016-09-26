@@ -2,11 +2,12 @@
 <md-card>
   <md-card-content>
 
+<h2 style="color: black;" layout-align="center center" layout="row" layout-padding>Get in touch with the team!</h2>
  <md-content layout-padding  style="background-color: white;">
-<h1 class="md-title" style="color: black;">Contact Us</h1>
-<form>
 
-<md-input-container>
+<form style="margin: auto; right: 15px;">
+
+<md-input-container style="text-align: left;">
     <label for="first" style="color: black;">First Name</label>
     <md-icon class="mdi mdi-account cicon"></md-icon><input type="text" id="first"
            md-autofocus> 
@@ -43,14 +44,14 @@
     
 </form>
 <!--Social Media Links-->
-<md-button class="socButton"><a href="www.facebook.com">
-<md-icon class="mdi mdi-facebook"></md-icon></a>
+<md-button class="socButton" href="{{ facebook }}" target="_blank" ng-click="linkModelFunc(facebook)">
+<md-icon class="mdi mdi-facebook"></md-icon>
 </md-button>
 <!-- <md-button class="socButton"><a href="www.twitter.com">
 <md-icon class="mdi mdi-twitter"></md-icon></a>
 </md-button> -->
-<md-button class="socButton"><a href="www.instagram.com">
-<md-icon class="mdi mdi-instagram"></md-icon></a>
+<md-button class="socButton" href="{{ instagram }}" target="_blank" ng-click="linkModelFunc(instagram)">
+<md-icon class="mdi mdi-instagram"></md-icon>
 </md-button>
 </md-content>    
     
