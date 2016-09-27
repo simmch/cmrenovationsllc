@@ -1,6 +1,11 @@
 html, body {
 	background-color: black;
 }
+.Desk_Menu:not([disabled]):hover {
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    border-radius: 0px;
+}
 
 md-input-container .md-input {
     width: auto;
@@ -13,6 +18,17 @@ md-input-container .md-input {
 md-icon {
     height: auto;
     width: auto;
+}
+
+.phone {
+	
+   /* position: relative;
+    left: 50%;*/
+    /*margin-right: 15px;*/
+  /*  border: 2px inset black;
+     background-color: white; 
+    border-radius: 100%;*/
+
 }
 
 .about_list {
@@ -114,7 +130,7 @@ md-toolbar {
 	line-height: 50px;
 	display: inline-block;
 	color: white;
-	margin-left: 25px;
+	/*margin-left: 25px;*/
 }
 md-sidenav {
 	background-color: rgb(0,188,212);
@@ -156,7 +172,24 @@ md-select-menu md-content md-option:not([disabled]):hover {
 	background-color: #00BCD4;
 }
 
+.mdi-arrow-right-bold-circle {
+	text-align: right;
+	float: right;
+	display: none;
+}
+.sidnavbuttonrows {
+	border-bottom: 2px solid #005661;
+	height: 80px;
+}
 
+.sidnavbuttonrows:hover {
+	border-bottom: 2px solid transparent;
+	background-color: #005661;
+}
+
+.nv {
+	padding: 10px;
+}
 
 /* Mobile CSS */
 @media only screen and (max-width: 600px) {

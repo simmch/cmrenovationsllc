@@ -12,6 +12,10 @@
 
         vm.openSidebar = openSidebar;
 
+        vm.phoneCall = phoneCall;
+
+        $scope.phone = "5133561794";
+
         $scope.isOpen = false;
         $scope.menu = {
             isOpen: false,
@@ -29,7 +33,9 @@
             $state.go('home');
         }
 
-
+        function phoneCall(phone){
+            $window.open(phone)
+        }
 
     });
 

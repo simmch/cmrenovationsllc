@@ -13,14 +13,23 @@
 <md-toolbar  md-scroll-shrink id="toolbar" ng-cloak>
   <div class="md-toolbar-tools" layout="row" flex> 
   <!--Mobile Menu Button-->
-  <md-button hide show-xs ng-click="vm.openSidebar()" ui-sref="nav">
-        <md-icon class="mdi mdi-menu" id="menu" style="font-size: 1.5em">
+
+        <md-icon hide show-xs ng-click="vm.openSidebar()" ui-sref="nav" class="mdi mdi-menu" id="menu" style="font-size: 1.5em;">
+       
         </md-icon>    
-        Menu
-    </md-button>
+       
+   
+    <span hide show-xs flex="80"></span>
+    <!--  <span hide show-xs flex></span>
+      <span hide show-xs flex></span>
+       <span hide show-xs flex></span>
+        <span hide show-xs flex></span> -->
+
+<a href="tel:1-513-356-1794" class="phone">
+    <md-icon hide show-xs class="mdi mdi-phone phone" layout-align="right" layout="row" layout-padding></md-icon></a>
 
    <!--Desktop Buttons-->
-   <md-button show hide-xs ui-sref="home" class="Desk_Menu">
+   <md-button show hide-xs ui-sref="home" class="Desk_Menu" layout="row" layout-align="left"> 
     <md-icon class="mdi mdi-home"></md-icon>
   	<strong>CMRENOVATIONSLLC</strong>
    </md-button> 

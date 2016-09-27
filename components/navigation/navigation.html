@@ -2,37 +2,49 @@
 
 	<div>
 
-		<h1 style="margin: 10px;">CMRENOVATIONS</h1>
-
-		<md-button class="sidenavbutton" ui-sref="home">
+		<h2 style="border-bottom: 2px solid #005661; padding: 20px; background-color: #005661; margin-top: -10px; color: white">CMRENOVATIONS</h2>
+	<div layout="row" ui-sref="home" class="sidnavbuttonrows" style="margin-top: -20px;">
+		<md-button class="sidenavbutton nv" ui-sref="home">
 		<md-icon class="mdi mdi-home"></md-icon>
 			Home
 		</md-button>
-		<br />
-
+		<md-icon class="mdi  mdi-arrow-right-bold-circle"></md-icon>
+	</div>
+		
+<div layout="row" ui-sref="about" class="sidnavbuttonrows">
 		<md-button class="sidenavbutton" ui-sref="about">
-		<md-icon class="mdi mdi-account"></md-icon>
+		<md-icon class="mdi mdi-account nv"></md-icon>
 			About
 		</md-button>
-		<br />
-
+		<md-icon class="mdi  mdi-arrow-right-bold-circle"></md-icon>
+		</div>
+		
+<div layout="row" ui-sref="services" class="sidnavbuttonrows">
 		<md-button class="sidenavbutton" ui-sref="services">
-		 <md-icon class="mdi mdi-apps"></md-icon>
+		 <md-icon class="mdi mdi-apps nv"></md-icon>
 			Services 
 		</md-button>
-		<br />
-
+		<md-icon class="mdi  mdi-arrow-right-bold-circle"></md-icon>
+		</div>
+		
+<div layout="row" ui-sref="product" class="sidnavbuttonrows">
 		<md-button class="sidenavbutton" ui-sref="product">
-		  <md-icon class="mdi mdi-border-inside"></md-icon>
+		  <md-icon class="mdi mdi-border-inside nv"></md-icon>
 			Products 
 		</md-button>
-		<br />
-
+		<md-icon class="mdi  mdi-arrow-right-bold-circle"></md-icon>
+		</div>
+		
+<div layout="row" ui-sref="contact" class="sidnavbuttonrows" style="border-bottom: 0px;">
 		  <md-button class="sidenavbutton" ui-sref="contact">
-		   <md-icon class="mdi mdi-message"></md-icon>
+		   <md-icon class="mdi mdi-message nv"></md-icon>
 		   Contact 
 		   </md-button> 
+		   <md-icon class="mdi  mdi-arrow-right-bold-circle"></md-icon>
+		   </div>
 	</div>
+
+
 
 </md-sidenav>
 
