@@ -4,15 +4,16 @@
 
 	angular
 		.module('product.ctrl', ['ngMaterial', 'ui.router'])
-		.controller("productController", function($scope, $mdSidenav, $http, $state, $stateParams, productFactory){
+		.controller("productController", function($scope, $mdSidenav, $http, $state, $stateParams, productFactory, $timeout){
 			var vm = this;
 
 			$scope.isLoading = true;
 
 			productFactory.getProducts().then(function(data)	{
 				vm.products = data.data;
-				vm.categories = getCategories(vm.products);
 				$scope.isLoading = false;
+				vm.categories = getCategories(vm.products);
+			
 			});
 
 			function getCategories(products) {

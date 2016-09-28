@@ -182,10 +182,10 @@ md-select-menu md-content md-option:not([disabled]):hover {
 	height: 80px;
 }
 
-.sidnavbuttonrows:hover {
+/*.sidnavbuttonrows:hover {
 	border-bottom: 2px solid transparent;
 	background-color: #005661;
-}
+}*/
 
 .nv {
 	padding: 10px;

@@ -24,9 +24,8 @@ Clear
 <md-content class="md-padding" layout="row" layout-wrap layout-align="center center">
 
 
+<md-progress-circular md-mode="indeterminate" ng-show="isLoading"></md-progress-circular><md-card ng-repeat="product in vm.products | filter: productsFilter | filter: category" flex="30"  class="product" layout-wrap>
 
-<md-card ng-repeat="product in vm.products | filter: productsFilter | filter: category" flex="30"  class="product" layout-wrap>
-<md-progress-circular md-mode="indeterminate" ng-show="isLoading"></md-progress-circular>
 <img ng-src="{{ product.image }}" class="md-avatar">
 <md-card-content>
 <div class="product-info">
