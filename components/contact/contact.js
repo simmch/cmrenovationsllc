@@ -19,8 +19,8 @@
             $scope.processForm = function(){
                 $http({
                     method: 'POST',
-                    url: 'mail.php',
-                    data: $scope.formData, 
+                    url: 'http://www.testyourprod.com/public_html/scripts/mail.php',
+                    data: $httpParamSerializerJQLike($scope.formData), 
                     headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
 
                 })
