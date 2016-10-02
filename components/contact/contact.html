@@ -1,44 +1,38 @@
 <md-content layout-align="center center" layout="row" layout-padding>
-<md-card>
+<md-card class="md-whiteframe-z2">
   <md-card-content>
 
 <h2 style="color: black;" layout-align="center center" layout="row" layout-padding>Get in touch with the team!</h2>
  <md-content layout-padding  style="background-color: white;">
 
-<form style="margin: auto; right: 15px;">
+<form style="margin: auto; right: 10px;" ng-submit="processForm()" method="post">
 
 <md-input-container style="text-align: left;">
-    <label for="first" style="color: black;">First Name</label>
-    <md-icon class="mdi mdi-account cicon"></md-icon><input type="text" id="first"
-           md-autofocus> 
+    <label for="first" style="color: black;">First & Last Name: </label>
+    <md-icon class="mdi mdi-account cicon"></md-icon>
+    <input type="text" id="first" name="name" ng-model="formData.name" required md-autofocus> 
 </md-input-container>
 
-<md-input-container>
-	<label for="last" style="color: black;">Last Name</label>
-	<md-icon class="mdi mdi-account cicon"></md-icon><input type="text" id="last"
-			md-autofocus>
+<br />
+
+<md-input-container flex>
+    <label for="email" style="color: black;">Email: </label>
+    <md-icon class="mdi mdi-email cicon"></md-icon>
+    <input type="email" id="email"
+          name="email" ng-model="formData.email" required md-autofocus>
+</md-input-container>
+
+<br />
+
+<md-input-container flex>
+	<label for="message" style="color: black;">Message: </label>
+	<md-icon class="mdi mdi-message cicon"></md-icon>
+  <textarea type="textarea" id="message" placeholder="Hey! I would like to discuss further business with you. When can we chat?" ng-model="formData.message" columns="4" required> </textarea>
 </md-input-container>
 <br />
 
-<md-input-container>
-    <label for="email" style="color: black;">Email</label>
-    <md-icon class="mdi mdi-email cicon"></md-icon><input type="text" id="email"
-          md-autofocus>
-</md-input-container>
-
-<md-input-container>
-	<label for="subject" style="color: black;">Subject</label>
-	<md-icon class="mdi mdi-message cicon"></md-icon><input type="text" id="subject" md-autofocus>
-</md-input-container>
-<br />
-
-<md-input-container>
-	<label for="message" style="color: black;">Message</label>
-	<md-icon class="mdi mdi-message cicon"></md-icon><input type="textarea" id="message">
-</md-input-container>
-<br />
-
-<md-button class="md-primary" style="color: black;">
+<md-button class="md-primary" style="color: black;" type="submit" 
+ aria-label="Save Project">
     Send
 </md-button>    
     
